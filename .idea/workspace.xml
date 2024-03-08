@@ -5,119 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bc6b4c7-7bad-4783-8463-732e8ca17207" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/controller/ChartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/dto/chart/ChartAddRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/dto/chart/ChartEditRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/dto/chart/ChartQueryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/dto/chart/ChartUpdateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/vo/ChartVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4639eb09-0777-4d5f-be25-57ce267783cd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4639eb09-0777-4d5f-be25-57ce267783cd.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_yucongming_yucongming_java_sdk_0_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/config/AIApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/utils/ExcelUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-init.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/create_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/create_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/dto/user/UserLoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/dto/user/UserLoginRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mika/bi/service/PostFavourServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mika/bi/service/PostFavourServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mika/bi/service/PostThumbServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mika/bi/service/PostThumbServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/additional-spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-test.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/banner.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/MainApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/annotation/AuthCheck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/aop/AuthInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/aop/LogInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/common/BaseResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/common/DeleteRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/common/ErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/common/PageRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/common/ResultUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/config/CorsConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/config/JsonConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/config/MyBatisPlusConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/constant/CommonConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/constant/FileConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/constant/UserConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/controller/FileController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/controller/PostController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/controller/PostFavourController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/controller/PostThumbController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/esdao/PostEsDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/exception/BusinessException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/exception/GlobalExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/exception/ThrowUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/job/cycle/IncSyncPostToEs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/job/once/FullSyncPostToEs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/mapper/PostFavourMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/mapper/PostMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/mapper/PostThumbMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/file/UploadFileRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/post/PostAddRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/post/PostEditRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/post/PostEsDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/post/PostQueryRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/post/PostUpdateRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/postfavour/PostFavourAddRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/postfavour/PostFavourQueryRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/postthumb/PostThumbAddRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/user/UserAddRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/user/UserLoginRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/user/UserQueryRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/user/UserRegisterRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/user/UserUpdateMyRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/user/UserUpdateRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/entity/Post.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/entity/PostFavour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/entity/PostThumb.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/enums/FileUploadBizEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/enums/UserRoleEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/vo/LoginUserVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/vo/PostVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/vo/UserVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/service/PostFavourService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/service/PostService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/service/PostThumbService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/service/impl/PostFavourServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/service/impl/PostServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/service/impl/PostThumbServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/utils/NetUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/utils/SpringContextUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/utils/SqlUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/PostFavourMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/PostMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/PostThumbMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test_excel.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mika/bi/MainApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mika/bi/esdao/PostEsDaoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mika/bi/mapper/PostFavourMapperTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mika/bi/mapper/PostMapperTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mika/bi/service/PostFavourServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mika/bi/service/PostServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mika/bi/service/PostThumbServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mika/bi/service/UserServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mika/bi/utils/EasyExcelTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/controller/ChartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/controller/ChartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/dto/chart/ChartAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/dto/chart/ChartAddRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/vo/ChartVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/vo/ChartVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generator/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generator/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test_excel.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/controller/ChartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mika/bi/controller/ChartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/chart/ChartAddRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/chart/ChartAddRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/vo/ChartVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mika/bi/model/vo/ChartVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generator/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generator/service/impl/UserServiceImpl.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -156,7 +75,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/mika/bi/model/dto/chart" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.0" />
@@ -168,6 +87,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\project\backend\BI\src\main\resources" />
       <recent name="D:\java\project\backend\BI\src\main\java\com\mika\bi\model\dto\chart" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -179,7 +99,20 @@
       <recent name="com.mika.bi.controller" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.MainApplication">
+    <configuration name="ExcelUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mika.bi.utils.ExcelUtils" />
+      <module name="bi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mika.bi.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -245,6 +178,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.ExcelUtils" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -254,7 +192,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709886897922</updated>
-      <workItem from="1709886900659" duration="9096000" />
+      <workItem from="1709886900659" duration="17940000" />
     </task>
     <servers />
   </component>
@@ -271,5 +209,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mika/bi/controller/ChartController.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mika/bi/controller/ChartController.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -26,10 +26,6 @@ public class ChartVO implements Serializable {
      */
     private String goal;
 
-    /**
-     * 图表数据
-     */
-    private String chartData;
 
     /**
      * 图表类型
@@ -56,10 +52,6 @@ public class ChartVO implements Serializable {
      */
     private String execMessage;
 
-    /**
-     * 创建用户 id
-     */
-    private Long userId;
 
     private static final long serialVersionUID = 1L;
 }

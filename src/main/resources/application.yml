@@ -79,5 +79,7 @@ knife4j:
         api-rule: package
         api-rule-resources:
           - com.mika.bi.controller
-
-
+ai:
+  api:
+    access-key: smb3yves9nc86dgc1vkdyqltwl7x9idw
+    secret-key: ke3ozntvx93f1be2qc0p8szt9cc00dgn
