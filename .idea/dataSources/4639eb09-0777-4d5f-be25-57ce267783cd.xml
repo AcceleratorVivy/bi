@@ -795,5 +795,160 @@ SELECT|sys.sys_config
       <ObjectGrants>ALL PRIVILEGES!
 </ObjectGrants>
     </user>
+    <table id="247" parent="4" name="chart">
+      <Comment>图表信息表</Comment>
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="248" parent="4" name="user">
+      <Comment>用户</Comment>
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <column id="249" parent="247" name="id">
+      <Position>1</Position>
+      <Comment>id</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="250" parent="247" name="name">
+      <Position>2</Position>
+      <Comment>图标名称</Comment>
+      <DataType>varchar(128)|0s</DataType>
+    </column>
+    <column id="251" parent="247" name="goal">
+      <Position>3</Position>
+      <Comment>分析目标</Comment>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="252" parent="247" name="chartData">
+      <Position>4</Position>
+      <Comment>图表数据</Comment>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="253" parent="247" name="chartType">
+      <Position>5</Position>
+      <Comment>图表类型</Comment>
+      <DataType>varchar(128)|0s</DataType>
+    </column>
+    <column id="254" parent="247" name="genChart">
+      <Position>6</Position>
+      <Comment>生成的图表数据</Comment>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="255" parent="247" name="genResult">
+      <Position>7</Position>
+      <Comment>生成的分析结论</Comment>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="256" parent="247" name="status">
+      <Position>8</Position>
+      <Comment>图表生成状态,wait、succeed,running,failed</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="257" parent="247" name="execMessage">
+      <Position>9</Position>
+      <Comment>图表生成信息描述</Comment>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="258" parent="247" name="userId">
+      <Position>10</Position>
+      <Comment>创建用户 id</Comment>
+      <DataType>bigint(20)|0s</DataType>
+    </column>
+    <column id="259" parent="247" name="createTime">
+      <Position>11</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="260" parent="247" name="updateTime">
+      <Position>12</Position>
+      <Comment>更新时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+    </column>
+    <column id="261" parent="247" name="isDelete">
+      <Position>13</Position>
+      <Comment>是否删除</Comment>
+      <DataType>tinyint(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <key id="262" parent="247" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="263" parent="248" name="id">
+      <Position>1</Position>
+      <Comment>id</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="264" parent="248" name="userAccount">
+      <Position>2</Position>
+      <Comment>账号</Comment>
+      <DataType>varchar(256)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="265" parent="248" name="userPassword">
+      <Position>3</Position>
+      <Comment>密码</Comment>
+      <DataType>varchar(512)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="266" parent="248" name="userName">
+      <Position>4</Position>
+      <Comment>用户昵称</Comment>
+      <DataType>varchar(256)|0s</DataType>
+    </column>
+    <column id="267" parent="248" name="userAvatar">
+      <Position>5</Position>
+      <Comment>用户头像</Comment>
+      <DataType>varchar(1024)|0s</DataType>
+    </column>
+    <column id="268" parent="248" name="userRole">
+      <Position>6</Position>
+      <Comment>用户角色：user/admin</Comment>
+      <DataType>varchar(256)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;user&apos;</DefaultExpression>
+    </column>
+    <column id="269" parent="248" name="createTime">
+      <Position>7</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="270" parent="248" name="updateTime">
+      <Position>8</Position>
+      <Comment>更新时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+    </column>
+    <column id="271" parent="248" name="isDelete">
+      <Position>9</Position>
+      <Comment>是否删除</Comment>
+      <DataType>tinyint(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <index id="272" parent="248" name="idx_userAccount">
+      <ColNames>userAccount</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="273" parent="248" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>
