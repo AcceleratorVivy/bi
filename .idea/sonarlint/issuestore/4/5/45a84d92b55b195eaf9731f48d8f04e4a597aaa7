@@ -1,0 +1,11 @@
+
+k
+java:S22593"I"NullPointerException" will be thrown when invoking method "readExcel()".(óàó×ûÿÿÿÿ8ÖŠÍğá1
+d
+java:S2259$"BA "NullPointerException" could be thrown; "list" is nullable here.(ìäâşÿÿÿÿ8Ø´Íğá1
+]	java:S125"<This block of commented-out lines of code should be removed.(Ü¦Æçùÿÿÿÿ8ÂÒÌğá1
+d
+java:S3252"GUse static access with "com.alibaba.excel.EasyExcelFactory" for "read".(ÁÃ½Ò8Ü´Íğá1
+Z	java:S1063"9Replace this use of System.out or System.err by a logger.(óàó×ûÿÿÿÿ8›ÉÈğá1
+>
+java:S11163"Remove this empty statement.(óàó×ûÿÿÿÿ8ÁéÈğá1

@@ -5,26 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bc6b4c7-7bad-4783-8463-732e8ca17207" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_yucongming_yucongming_java_sdk_0_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/config/AIApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/utils/ExcelUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_kryo_5_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_minlog_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_reflectasm_1_11_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_79_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_79_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava3_rxjava_3_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_marshalling_jboss_marshalling_2_0_11_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_marshalling_jboss_marshalling_river_2_0_11_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jodd_jodd_core_5_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_redisson_redisson_3_27_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/config/RedissonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/controller/QueueController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/manager/RedissonRateLimitManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/manager/ThreadPoolExecutorManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/dto/chart/MyChartQueryRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mika/bi/RedissonRateLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mika/bi/ThreadPoolExecutorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4203998b-6322-4b92-8635-5a3022929e3a.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4203998b-6322-4b92-8635-5a3022929e3a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jodd_jodd_bean_5_1_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/common/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/common/ErrorCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/controller/ChartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/controller/ChartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/dto/chart/ChartAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/dto/chart/ChartAddRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/vo/ChartVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/vo/ChartVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generator/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generator/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/service/impl/ChartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/service/impl/ChartServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test_excel.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/MainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mika/bi/MainApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/common/ErrorCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mika/bi/common/ErrorCode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/controller/ChartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mika/bi/controller/ChartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/chart/ChartAddRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mika/bi/model/dto/chart/ChartAddRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/model/vo/ChartVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mika/bi/model/vo/ChartVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generator/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generator/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/service/impl/ChartServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mika/bi/service/impl/ChartServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +91,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../background/yubi-backend" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.0" />
@@ -95,6 +111,7 @@
       <recent name="com.mika.bi.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mika.bi.model.dto.chart" />
       <recent name="com.mika.bi.model.vo" />
       <recent name="com.mika.bi.controller" />
     </key>
@@ -113,60 +130,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
+    <configuration name="RedissonRateLimit.testRedissonLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bi" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mika.bi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mika.bi" />
+      <option name="MAIN_CLASS_NAME" value="com.mika.bi.RedissonRateLimit" />
+      <option name="METHOD_NAME" value="testRedissonLimit" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+    <configuration name="ThreadPoolExecutorTest.testPool" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bi" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mika.bi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mika.bi" />
+      <option name="MAIN_CLASS_NAME" value="com.mika.bi.ThreadPoolExecutorTest" />
+      <option name="METHOD_NAME" value="testPool" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,6 +184,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ThreadPoolExecutorTest.testPool" />
+        <item itemvalue="JUnit.RedissonRateLimit.testRedissonLimit" />
         <item itemvalue="应用程序.ExcelUtils" />
       </list>
     </recent_temporary>
@@ -192,12 +198,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709886897922</updated>
-      <workItem from="1709886900659" duration="17940000" />
+      <workItem from="1709886900659" duration="23646000" />
+      <workItem from="1709965876698" duration="7103000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -209,19 +226,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mika/bi/controller/ChartController.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="12" />
+          <line>204</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mika/bi/controller/ChartController.java</url>
-          <line>132</line>
-          <option name="timeStamp" value="13" />
+          <line>222</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

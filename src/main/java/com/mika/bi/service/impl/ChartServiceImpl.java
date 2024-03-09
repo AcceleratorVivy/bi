@@ -75,7 +75,7 @@ public class ChartServiceImpl extends ServiceImpl<ChartMapper, Chart>
                 .like(StringUtils.isNotBlank(goal), "goal", goal)
                 .like(StringUtils.isNotBlank(name), "name", name)
                 .eq(ObjectUtils.isNotNull(id), "id", id)
-                .eq("userId",userId);
+                .eq(ObjectUtils.isNotNull(userId),"userId",userId);
         return chartQueryWrapper;
     }
 

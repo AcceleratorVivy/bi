@@ -4,6 +4,11 @@
       "name": "ai.api",
       "type": "com.mika.bi.config.AIApiConfig",
       "sourceType": "com.mika.bi.config.AIApiConfig"
+    },
+    {
+      "name": "redisson",
+      "type": "com.mika.bi.config.RedissonConfig",
+      "sourceType": "com.mika.bi.config.RedissonConfig"
     }
   ],
   "properties": [
@@ -41,6 +46,26 @@
       "name": "cos.client.secretKey",
       "type": "java.lang.String",
       "description": "Description for cos.client.secretKey."
+    },
+    {
+      "name": "redisson.database",
+      "type": "java.lang.Integer",
+      "sourceType": "com.mika.bi.config.RedissonConfig"
+    },
+    {
+      "name": "redisson.host",
+      "type": "java.lang.String",
+      "sourceType": "com.mika.bi.config.RedissonConfig"
+    },
+    {
+      "name": "redisson.password",
+      "type": "java.lang.String",
+      "sourceType": "com.mika.bi.config.RedissonConfig"
+    },
+    {
+      "name": "redisson.port",
+      "type": "java.lang.String",
+      "sourceType": "com.mika.bi.config.RedissonConfig"
     },
     {
       "name": "wx.open.appId",

@@ -12,7 +12,7 @@ spring:
   # session 配置
   session:
     # todo 取消注释开启分布式 session（须先配置 Redis）
-    # store-type: redis
+    store-type: redis
     # 30 天过期
     timeout: 2592000
   # 数据库配置
@@ -24,12 +24,13 @@ spring:
     password: 123123..
   # Redis 配置
   # todo 需替换配置，然后取消注释
-#  redis:
-#    database: 1
-#    host: localhost
-#    port: 6379
-#    timeout: 5000
-#    password: 123456
+  redis:
+    database: 1
+    host: 192.168.52.138
+    port: 6379
+    timeout: 5000
+    password: root
+
   # Elasticsearch 配置
   # todo 需替换配置，然后取消注释
 #  elasticsearch:
@@ -60,14 +61,7 @@ mybatis-plus:
       logic-delete-value: 1 # 逻辑已删除值（默认为 1）
       logic-not-delete-value: 0 # 逻辑未删除值（默认为 0）
 
-# 对象存储
-# todo 需替换配置
-cos:
-  client:
-    accessKey: xxx
-    secretKey: xxx
-    region: xxx
-    bucket: xxx
+
 # 接口文档配置
 knife4j:
   enable: true
@@ -83,3 +77,8 @@ ai:
   api:
     access-key: smb3yves9nc86dgc1vkdyqltwl7x9idw
     secret-key: ke3ozntvx93f1be2qc0p8szt9cc00dgn
+redisson:
+  host: 192.168.52.138
+  port: 6379
+  password: root
+  database: 2

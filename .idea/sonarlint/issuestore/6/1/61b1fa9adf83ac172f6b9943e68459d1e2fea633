@@ -1,0 +1,11 @@
+
+c
+java:S1192õ"GDefine a constant instead of duplicating this literal "postId" 4 times.(ÚˆÂŒşÿÿÿÿ
+a
+java:S1192r"FDefine a constant instead of duplicating this literal "title" 4 times.(‡²¾Ãøÿÿÿÿ
+b
+java:S1192}"GDefine a constant instead of duplicating this literal "userId" 6 times.(üàÕÆúÿÿÿÿ
+c
+java:S1192r"HDefine a constant instead of duplicating this literal "content" 4 times.(‡²¾Ãøÿÿÿÿ
+i
+java:S3776„"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ôÄªñ

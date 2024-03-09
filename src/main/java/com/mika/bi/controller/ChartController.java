@@ -1,25 +1,23 @@
 package com.mika.bi.controller;
 
 import cn.hutool.core.io.FileUtil;
-import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mika.bi.annotation.AuthCheck;
 import com.mika.bi.common.BaseResponse;
 import com.mika.bi.common.DeleteRequest;
 import com.mika.bi.common.ErrorCode;
 import com.mika.bi.common.ResultUtils;
-import com.mika.bi.constant.FileConstant;
 import com.mika.bi.constant.UserConstant;
 import com.mika.bi.exception.BusinessException;
 import com.mika.bi.exception.ThrowUtils;
+import com.mika.bi.manager.RedissonRateLimitManager;
+import com.mika.bi.manager.ThreadPoolExecutorManager;
 import com.mika.bi.model.dto.chart.ChartAddRequest;
-import com.mika.bi.model.dto.chart.ChartEditRequest;
 import com.mika.bi.model.dto.chart.ChartQueryRequest;
 import com.mika.bi.model.dto.chart.ChartUpdateRequest;
-import com.mika.bi.model.dto.file.UploadFileRequest;
+import com.mika.bi.model.dto.chart.MyChartQueryRequest;
 import com.mika.bi.model.entity.Chart;
 import com.mika.bi.model.entity.User;
-import com.mika.bi.model.enums.FileUploadBizEnum;
 import com.mika.bi.model.vo.ChartVO;
 import com.mika.bi.service.ChartService;
 import com.mika.bi.service.UserService;
@@ -28,7 +26,6 @@ import com.yupi.yucongming.dev.client.YuCongMingClient;
 import com.yupi.yucongming.dev.model.DevChatRequest;
 import com.yupi.yucongming.dev.model.DevChatResponse;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
@@ -36,9 +33,10 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import java.io.File;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * 帖子接口
@@ -58,6 +56,13 @@ public class ChartController {
     @Resource
     private YuCongMingClient yuCongMingClient;
     // region 增删改查
+    @Resource
+    private RedissonRateLimitManager redissonRateLimitManager;
+
+    @Resource
+    private ThreadPoolExecutor threadPoolExecutor;
+
+
 
 
     @PostMapping("/gen")
@@ -79,6 +84,10 @@ public class ChartController {
 
         String chartType = chartAddRequest.getChartType();
         chartType = StringUtils.isBlank(chartType)? "折线图" : chartType ;
+
+        User loginUser = userService.getLoginUser(request);
+
+        redissonRateLimitManager.doRateLimit("rateLimit.genChartByAi."+loginUser.getId());
 
         String excelData = ExcelUtils.readExcel(multipartFile);
         /**
@@ -109,11 +118,10 @@ public class ChartController {
 
         String chartCode = data[1];
         String result = data[2];
-        User loginUser = userService.getLoginUser(request);
         Chart chart = new Chart();
         chart.setName(name);
         chart.setGoal(goal);
-        chart.setChartData(excelData);
+        chart.setChartData(excelData);//todo 分表 将数据另创建一个新的表存储 data_{数据id}
         chart.setChartType(chartType);
         chart.setGenChart(chartCode);
         chart.setGenResult(result);
@@ -133,6 +141,132 @@ public class ChartController {
         chartVO.setExecMessage("");
         return ResultUtils.success(chartVO);
     }
+
+    /**
+     * 异步处理生成图表
+     * @param multipartFile
+     * @param chartAddRequest
+     * @param request
+     * @return
+     */
+    @PostMapping("/gen/async")
+    public BaseResponse<String> AsyncGenChartByAi(@RequestPart("file") MultipartFile multipartFile,
+                                              ChartAddRequest chartAddRequest, HttpServletRequest request) {
+        String name = chartAddRequest.getName();
+        String goal = chartAddRequest.getGoal();
+        ThrowUtils.throwIf(StringUtils.isBlank(goal),ErrorCode.NOT_FOUND_ERROR,"请填写目标需求");
+        ThrowUtils.throwIf(StringUtils.isNotBlank(name)&&name.length()>100,ErrorCode.PARAMS_ERROR,"图标名称过长");
+        long size = multipartFile.getSize();
+        final int ONE_M = 1024 * 1024;
+        final int NUM = 1;
+        ThrowUtils.throwIf(size > NUM*ONE_M,ErrorCode.OPERATION_ERROR,"文件大小大于"+NUM+"M");
+
+        String originalFilename = multipartFile.getOriginalFilename();
+        String suffix = FileUtil.getSuffix(originalFilename);
+        final List<String> vaildFileSuffix = Arrays.asList("xlsx","xls");
+        ThrowUtils.throwIf(!vaildFileSuffix.contains(suffix),ErrorCode.PARAMS_ERROR,"文件格式错误");
+
+        String chartType = chartAddRequest.getChartType();
+        chartType = StringUtils.isBlank(chartType)? "折线图" : chartType ;
+
+        User loginUser = userService.getLoginUser(request);
+
+        redissonRateLimitManager.doRateLimit("rateLimit.genChartByAi."+loginUser.getId());
+
+        /**
+         * 给数据、 要求图表类型、 分析目的
+         * prompt
+         *final String prompt = "你是一个数据分析师和前端开发专家，接下来我会按照以下固定格式给你提供内容：\n" +
+         *        "分析需求：\n" +
+         *        "{数据分析的需求或者目标}\n" +
+         *        "原始数据：\n" +
+         *        "{csv格式的原始数据，用,作为分隔符}\n" +
+         *        "请根据这两部分内容，按照以下指定格式生成内容（此外不要输出任何多余的开头、结尾、注释）\n" +
+         *        "【【【【【\n" +
+         *        "{前端 Echarts V5 的 option 配置对象js代码，合理地将数据进行可视化，不要生成任何多余的内容，比如注释}\n" +
+         *        "【【【【【\n" +
+         *        "{明确的数据分析结论、越详细越好，不要生成多余的注释}";
+         */
+        Chart chart = new Chart();
+        chart.setName(name);
+        chart.setGoal(goal);
+//        chart.setChartData(excelData);//todo 分表 将数据另创建一个新的表存储 data_{数据id}
+        chart.setChartType(chartType);
+//        chart.setGenChart(chartCode);
+//        chart.setGenResult(result);
+        chart.setStatus("wait");
+        chart.setUserId(loginUser.getId());
+        boolean save = chartService.save(chart);
+        if(!save){
+            genError(chart,ErrorCode.SYSTEM_ERROR,"保存图表失败");
+        }
+
+        CompletableFuture.runAsync(()->{
+            String excelData = ExcelUtils.readExcel(multipartFile);
+            chart.setChartData(excelData);
+            chart.setStatus("running");
+            boolean b = chartService.updateById(chart);
+            if(!b){
+                genError(chart,ErrorCode.OPERATION_ERROR,"执行失败");
+            }
+
+            StringBuffer requestBuffer = new StringBuffer();
+            requestBuffer.append("分析需求:\n");
+            requestBuffer.append(goal).append("请使用:").append(chart.getChartType()).append("\n");
+            requestBuffer.append("原始数据:\n").append(excelData);
+            if(requestBuffer.length()>1024){
+                genError(chart,ErrorCode.OPERATION_ERROR,"数据过大生成图表失败");
+            }
+
+            Long modelId = 1659171950288818178L;
+            DevChatRequest devChatRequest = new DevChatRequest(modelId,String.valueOf(requestBuffer));
+            com.yupi.yucongming.dev.common.BaseResponse<DevChatResponse> response = yuCongMingClient.doChat(devChatRequest);
+
+            String[] data = response.getData().getContent().split("【【【【【");
+            if(data.length != 3){
+                genError(chart,ErrorCode.SYSTEM_ERROR,"AI 故障");
+            }
+            String chartCode = data[1];
+            String result = data[2];
+            chart.setGenChart(chartCode);
+            chart.setGenResult(result);
+            chart.setStatus("succeed");
+            b = chartService.updateById(chart);
+        },threadPoolExecutor);
+
+        return ResultUtils.success("等待图表生成");
+
+    }
+
+    private void genError(Chart chart,ErrorCode errorCode,String message){
+        chart.setStatus("failed");
+        chart.setExecMessage(message);
+        chartService.updateById(chart);
+        throw new BusinessException(errorCode,message);
+
+    }
+
+
+    @PostMapping("/my/list/page")
+    public BaseResponse<Page<Chart>> listMyChartByPage(@RequestBody MyChartQueryRequest myChartQueryRequest,HttpServletRequest request) {
+
+        ChartQueryRequest chartQueryRequest = new ChartQueryRequest();
+        BeanUtils.copyProperties(myChartQueryRequest,chartQueryRequest);
+        User loginUser = userService.getLoginUser(request);
+        chartQueryRequest.setUserId(loginUser.getId());
+        long current = myChartQueryRequest.getCurrent();
+        long size = myChartQueryRequest.getPageSize();
+        Page<Chart> chartPage = chartService.page(new Page<>(current, size),
+                chartService.getQueryWrapper(chartQueryRequest));
+        return ResultUtils.success(chartPage);
+    }
+
+
+
+
+
+
+
 
 
 
