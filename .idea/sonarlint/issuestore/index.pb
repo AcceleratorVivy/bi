@@ -18,8 +18,6 @@ D
 e
 5src/main/java/com/mika/bi/model/entity/PostThumb.java,e\b\ebbbde0e19ebb285344e158f19629f2fb4405458
 k
-;src/main/java/com/mika/bi/service/impl/UserServiceImpl.java,d\e\de85e65296978a7b496f54fdcd6373533e895254
-k
 ;src/main/java/com/mika/bi/service/impl/PostServiceImpl.java,6\1\61b1fa9adf83ac172f6b9943e68459d1e2fea633
 `
 0src/main/java/com/mika/bi/model/entity/User.java,0\3\03dc4a8d32a61dc71a3c9b0f7fb8c74f2b1ecefc
@@ -41,8 +39,6 @@ q
 Asrc/main/java/com/mika/bi/service/impl/PostFavourServiceImpl.java,2\8\285862ba966946962d6af16cbe92e2e22fbf3459
 p
 @src/main/java/com/mika/bi/service/impl/PostThumbServiceImpl.java,e\d\edf9df71d213690849b39d8740ce08f691aeaed8
-a
-1src/main/java/com/mika/bi/model/entity/Chart.java,c\b\cb4ac75ff05858d5517c838568ddded5ee25a677
 c
 3src/main/java/com/mika/bi/model/vo/LoginUserVO.java,6\f\6fda9a490501866acbf3d461cb2d2e200784c5fd
 n
@@ -79,8 +75,6 @@ a
 1src/main/java/com/mika/bi/config/AIApiConfig.java,6\b\6b7ac90e775dfe078d989c60c0694ed79b34afd7
 _
 /src/main/java/com/mika/bi/utils/ExcelUtils.java,4\5\45a84d92b55b195eaf9731f48d8f04e4a597aaa7
-^
-.src/main/java/com/mika/bi/MainApplication.java,5\3\53140ccb27a61aa87e704eb6faf5f42d07db5303
 b
 2src/test/java/com/mika/bi/utils/EasyExcelTest.java,e\c\ec38cb89a4e69c56ac94a3fdb86b575c8e4ffdf6
 _

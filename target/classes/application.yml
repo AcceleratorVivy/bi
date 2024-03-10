@@ -1,5 +1,10 @@
 # 公共配置文件
 spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   application:
     name: BI
   # 默认 dev 环境
@@ -26,7 +31,7 @@ spring:
   # todo 需替换配置，然后取消注释
   redis:
     database: 1
-    host: 192.168.52.138
+    host: 192.168.52.139
     port: 6379
     timeout: 5000
     password: root
@@ -81,7 +86,7 @@ ai:
 #    access-key: smb3yves9nc86dgc1vkdyqltwl7x9idw
 #    secret-key: ke3ozntvx93f1be2qc0p8szt9cc00dgn
 redisson:
-  host: 192.168.52.138
+  host: 192.168.52.139
   port: 6379
   password: root
   database: 2

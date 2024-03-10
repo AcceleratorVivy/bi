@@ -2,6 +2,7 @@ package com.mika.bi.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.mika.bi.common.ErrorCode;
 import com.mika.bi.model.dto.chart.ChartQueryRequest;
 import com.mika.bi.model.entity.Chart;
 import com.baomidou.mybatisplus.extension.service.IService;
@@ -23,4 +24,6 @@ public interface ChartService extends IService<Chart> {
     QueryWrapper<Chart> getQueryWrapper(ChartQueryRequest chartQueryRequest);
 
     Page<ChartVO> getChartVOPage(Page<Chart> chartPage, HttpServletRequest request);
+
+    public void genError(Chart chart, ErrorCode errorCode, String message);
 }

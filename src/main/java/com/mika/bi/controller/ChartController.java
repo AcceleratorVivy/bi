@@ -10,6 +10,8 @@ import com.mika.bi.common.ResultUtils;
 import com.mika.bi.constant.UserConstant;
 import com.mika.bi.exception.BusinessException;
 import com.mika.bi.exception.ThrowUtils;
+import com.mika.bi.manager.MyMessageConsumer;
+import com.mika.bi.manager.MyMessageProducer;
 import com.mika.bi.manager.RedissonRateLimitManager;
 import com.mika.bi.manager.ThreadPoolExecutorManager;
 import com.mika.bi.model.dto.chart.ChartAddRequest;
@@ -58,6 +60,9 @@ public class ChartController {
     // region 增删改查
     @Resource
     private RedissonRateLimitManager redissonRateLimitManager;
+
+    @Resource
+    private MyMessageProducer myMessageProducer;
 
     @Resource
     private ThreadPoolExecutor threadPoolExecutor;
@@ -198,7 +203,7 @@ public class ChartController {
         chart.setUserId(loginUser.getId());
         boolean save = chartService.save(chart);
         if(!save){
-            genError(chart,ErrorCode.SYSTEM_ERROR,"保存图表失败");
+            chartService.genError(chart,ErrorCode.SYSTEM_ERROR,"保存图表失败");
         }
 
         CompletableFuture.runAsync(()->{
@@ -207,7 +212,7 @@ public class ChartController {
             chart.setStatus("running");
             boolean b = chartService.updateById(chart);
             if(!b){
-                genError(chart,ErrorCode.OPERATION_ERROR,"执行失败");
+                chartService.genError(chart,ErrorCode.OPERATION_ERROR,"执行失败");
             }
 
             StringBuffer requestBuffer = new StringBuffer();
@@ -215,7 +220,7 @@ public class ChartController {
             requestBuffer.append(goal).append("请使用:").append(chart.getChartType()).append("\n");
             requestBuffer.append("原始数据:\n").append(excelData);
             if(requestBuffer.length()>1024){
-                genError(chart,ErrorCode.OPERATION_ERROR,"数据过大生成图表失败");
+                chartService.genError(chart,ErrorCode.OPERATION_ERROR,"数据过大生成图表失败");
             }
 
             Long modelId = 1659171950288818178L;
@@ -224,7 +229,7 @@ public class ChartController {
 
             String[] data = response.getData().getContent().split("【【【【【");
             if(data.length != 3){
-                genError(chart,ErrorCode.SYSTEM_ERROR,"AI 故障");
+                chartService.genError(chart,ErrorCode.SYSTEM_ERROR,"AI 故障");
             }
             String chartCode = data[1];
             String result = data[2];
@@ -238,13 +243,64 @@ public class ChartController {
 
     }
 
-    private void genError(Chart chart,ErrorCode errorCode,String message){
-        chart.setStatus("failed");
-        chart.setExecMessage(message);
-        chartService.updateById(chart);
-        throw new BusinessException(errorCode,message);
+    /**
+     *   通过消息队列处理生成图表
+     * @param multipartFile
+     * @param chartAddRequest
+     * @param request
+     * @return
+     */
+    @PostMapping("/gen/async/mq")
+    public BaseResponse<String> AsyncGenChartByAiMq(@RequestPart("file") MultipartFile multipartFile,
+                                                  ChartAddRequest chartAddRequest, HttpServletRequest request) {
+        String name = chartAddRequest.getName();
+        String goal = chartAddRequest.getGoal();
+        ThrowUtils.throwIf(StringUtils.isBlank(goal),ErrorCode.NOT_FOUND_ERROR,"请填写目标需求");
+        ThrowUtils.throwIf(StringUtils.isNotBlank(name)&&name.length()>100,ErrorCode.PARAMS_ERROR,"图标名称过长");
+        long size = multipartFile.getSize();
+        final int ONE_M = 1024 * 1024;
+        final int NUM = 1;
+        ThrowUtils.throwIf(size > NUM*ONE_M,ErrorCode.OPERATION_ERROR,"文件大小大于"+NUM+"M");
+
+        String originalFilename = multipartFile.getOriginalFilename();
+        String suffix = FileUtil.getSuffix(originalFilename);
+        final List<String> vaildFileSuffix = Arrays.asList("xlsx","xls");
+        ThrowUtils.throwIf(!vaildFileSuffix.contains(suffix),ErrorCode.PARAMS_ERROR,"文件格式错误");
+
+        String chartType = chartAddRequest.getChartType();
+        chartType = StringUtils.isBlank(chartType)? "折线图" : chartType ;
+
+        User loginUser = userService.getLoginUser(request);
+
+        redissonRateLimitManager.doRateLimit("rateLimit.genChartByAi."+loginUser.getId());
+        Chart chart = new Chart();
+        chart.setName(name);
+        chart.setGoal(goal);
+//        chart.setChartData(excelData);//todo 分表 将数据另创建一个新的表存储 data_{数据id}
+        chart.setChartType(chartType);
+        chart.setStatus("wait");
+        chart.setUserId(loginUser.getId());
+        String excelData = ExcelUtils.readExcel(multipartFile);
+        chart.setChartData(excelData);
+        boolean save = chartService.save(chart);
+        if(!save){
+            chartService.genError(chart,ErrorCode.SYSTEM_ERROR,"保存图表失败");
+        }
+
+        myMessageProducer.sendMessage(String.valueOf(chart.getId()));
+
+        return ResultUtils.success("等待图表生成");
 
     }
+
+
+
+
+
+
+
+
+
 
 
     @PostMapping("/my/list/page")

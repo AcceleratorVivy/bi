@@ -11,6 +11,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.mika.bi.common.ErrorCode;
 import com.mika.bi.constant.CommonConstant;
+import com.mika.bi.exception.BusinessException;
 import com.mika.bi.exception.ThrowUtils;
 import com.mika.bi.model.dto.chart.ChartQueryRequest;
 import com.mika.bi.model.entity.Chart;
@@ -89,6 +90,15 @@ public class ChartServiceImpl extends ServiceImpl<ChartMapper, Chart>
         List<ChartVO> collect = records.stream().map(o -> getChartVO(o, request)).collect(Collectors.toList());
         chartVOPage.setRecords(collect);
         return chartVOPage;
+    }
+
+    @Override
+    public void genError(Chart chart,ErrorCode errorCode,String message){
+        chart.setStatus("failed");
+        chart.setExecMessage(message);
+        updateById(chart);
+        throw new BusinessException(errorCode,message);
+
     }
 }
 

@@ -5,31 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bc6b4c7-7bad-4783-8463-732e8ca17207" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_20_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/c/bc8e6c8c6479d20dda889fc5b59f42a6a7b52cbd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/dbd078088c50b0b9ce4b7cc174b89d8937095dd2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/DDLConsumerForTTL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/DirectExchangeConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/DirectExchangeProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/ExchangeConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/ExchangeSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/MultiConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/MultiProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/SingleRecv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/SingleSend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/TTLForMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/TTLForQueueAndDDL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/TTLForQueueAndDDL2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/TopicExchangeConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/TopicExchangeProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_2_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_2_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_3_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/manager/DeadLetterConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/manager/MyMessageConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/manager/MyMessageProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mika/bi/manager/MyMessageProducerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/3/53140ccb27a61aa87e704eb6faf5f42d07db5303" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cb4ac75ff05858d5517c838568ddded5ee25a677" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/de85e65296978a7b496f54fdcd6373533e895254" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/controller/ChartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/controller/ChartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/service/ChartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/service/ChartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/service/impl/ChartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/service/impl/ChartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/controller/ChartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mika/bi/controller/ChartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/service/ChartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mika/bi/service/ChartService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/service/impl/ChartServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mika/bi/service/impl/ChartServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +39,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -80,11 +81,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../background/yubi-backend" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.last.edited" value="问题" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.37974682" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="ReactorSettings">
@@ -95,9 +98,15 @@
       <recent name="D:\java\project\backend\BI\src\main\resources" />
       <recent name="D:\java\project\backend\BI\src\main\java\com\mika\bi\model\dto\chart" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.mika.bi.mapper" />
       <recent name="com.mika.bi.service" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.mika.bi.manager" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.mika.bi.mq" />
@@ -106,7 +115,7 @@
       <recent name="com.mika.bi.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.TTLForQueueAndDDL2">
+  <component name="RunManager" selected="Spring Boot.MainApplication">
     <configuration name="DDLConsumerForTTL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mika.bi.mq.DDLConsumerForTTL" />
       <module name="bi" />
@@ -159,19 +168,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TopicExchangeConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mika.bi.mq.TopicExchangeConsumer" />
-      <module name="bi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mika.bi.mq.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -179,6 +175,22 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyMessageProducerTest.sendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mika.bi.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mika.bi.manager" />
+      <option name="MAIN_CLASS_NAME" value="com.mika.bi.manager.MyMessageProducerTest" />
+      <option name="METHOD_NAME" value="sendMessage" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -192,19 +204,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.MainApplication" />
-      <item itemvalue="应用程序.TopicExchangeConsumer" />
       <item itemvalue="应用程序.TTLForQueueAndDDL" />
       <item itemvalue="应用程序.DDLConsumerForTTL" />
       <item itemvalue="应用程序.MultiConsumer" />
       <item itemvalue="应用程序.TTLForQueueAndDDL2" />
+      <item itemvalue="JUnit.MyMessageProducerTest.sendMessage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyMessageProducerTest.sendMessage" />
         <item itemvalue="应用程序.TTLForQueueAndDDL2" />
         <item itemvalue="应用程序.DDLConsumerForTTL" />
         <item itemvalue="应用程序.TTLForQueueAndDDL" />
         <item itemvalue="应用程序.MultiConsumer" />
-        <item itemvalue="应用程序.TopicExchangeConsumer" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +230,7 @@
       <updated>1709886897922</updated>
       <workItem from="1709886900659" duration="23646000" />
       <workItem from="1709965876698" duration="8632000" />
-      <workItem from="1710053852063" duration="10388000" />
+      <workItem from="1710053852063" duration="16360000" />
     </task>
     <servers />
   </component>
@@ -251,22 +263,27 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mika/bi/controller/ChartController.java</url>
-          <line>204</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mika/bi/controller/ChartController.java</url>
-          <line>222</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mika/bi/mq/MultiConsumer.java</url>
           <line>35</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/mika/bi/manager/MyMessageProducerTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mika/bi/manager/DeadLetterConsumer.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mika/bi/manager/MyMessageConsumer.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
