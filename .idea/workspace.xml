@@ -5,42 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bc6b4c7-7bad-4783-8463-732e8ca17207" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_kryo_5_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_minlog_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_reflectasm_1_11_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_79_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_79_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava3_rxjava_3_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_marshalling_jboss_marshalling_2_0_11_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_marshalling_jboss_marshalling_river_2_0_11_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jodd_jodd_core_5_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_redisson_redisson_3_27_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/config/RedissonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/controller/QueueController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/manager/RedissonRateLimitManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/manager/ThreadPoolExecutorManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/model/dto/chart/MyChartQueryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mika/bi/RedissonRateLimit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mika/bi/ThreadPoolExecutorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4203998b-6322-4b92-8635-5a3022929e3a.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4203998b-6322-4b92-8635-5a3022929e3a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jodd_jodd_bean_5_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_20_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/c/bc8e6c8c6479d20dda889fc5b59f42a6a7b52cbd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/dbd078088c50b0b9ce4b7cc174b89d8937095dd2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/DDLConsumerForTTL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/DirectExchangeConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/DirectExchangeProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/ExchangeConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/ExchangeSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/MultiConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/MultiProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/SingleRecv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/SingleSend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/TTLForMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/TTLForQueueAndDDL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/TTLForQueueAndDDL2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/TopicExchangeConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/mq/TopicExchangeProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/common/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/common/ErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/controller/ChartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/controller/ChartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mika/bi/service/impl/ChartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mika/bi/service/impl/ChartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/MainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mika/bi/MainApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/common/ErrorCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mika/bi/common/ErrorCode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/controller/ChartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mika/bi/controller/ChartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mika/bi/service/impl/ChartServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mika/bi/service/impl/ChartServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +85,7 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -111,18 +100,19 @@
       <recent name="com.mika.bi.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mika.bi.mq" />
       <recent name="com.mika.bi.model.dto.chart" />
       <recent name="com.mika.bi.model.vo" />
       <recent name="com.mika.bi.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MainApplication">
-    <configuration name="ExcelUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mika.bi.utils.ExcelUtils" />
+  <component name="RunManager" selected="应用程序.TTLForQueueAndDDL2">
+    <configuration name="DDLConsumerForTTL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mika.bi.mq.DDLConsumerForTTL" />
       <module name="bi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mika.bi.utils.*" />
+          <option name="PATTERN" value="com.mika.bi.mq.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,47 +120,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration name="MultiConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mika.bi.mq.MultiConsumer" />
+      <module name="bi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mika.bi.mq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TTLForQueueAndDDL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mika.bi.mq.TTLForQueueAndDDL" />
+      <module name="bi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mika.bi.mq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TTLForQueueAndDDL2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mika.bi.mq.TTLForQueueAndDDL2" />
+      <module name="bi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mika.bi.mq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TopicExchangeConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mika.bi.mq.TopicExchangeConsumer" />
+      <module name="bi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mika.bi.mq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedissonRateLimit.testRedissonLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mika.bi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mika.bi" />
-      <option name="MAIN_CLASS_NAME" value="com.mika.bi.RedissonRateLimit" />
-      <option name="METHOD_NAME" value="testRedissonLimit" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreadPoolExecutorTest.testPool" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mika.bi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mika.bi" />
-      <option name="MAIN_CLASS_NAME" value="com.mika.bi.ThreadPoolExecutorTest" />
-      <option name="METHOD_NAME" value="testPool" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -182,11 +190,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.MainApplication" />
+      <item itemvalue="应用程序.TopicExchangeConsumer" />
+      <item itemvalue="应用程序.TTLForQueueAndDDL" />
+      <item itemvalue="应用程序.DDLConsumerForTTL" />
+      <item itemvalue="应用程序.MultiConsumer" />
+      <item itemvalue="应用程序.TTLForQueueAndDDL2" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ThreadPoolExecutorTest.testPool" />
-        <item itemvalue="JUnit.RedissonRateLimit.testRedissonLimit" />
-        <item itemvalue="应用程序.ExcelUtils" />
+        <item itemvalue="应用程序.TTLForQueueAndDDL2" />
+        <item itemvalue="应用程序.DDLConsumerForTTL" />
+        <item itemvalue="应用程序.TTLForQueueAndDDL" />
+        <item itemvalue="应用程序.MultiConsumer" />
+        <item itemvalue="应用程序.TopicExchangeConsumer" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +217,8 @@
       <option name="presentableId" value="Default" />
       <updated>1709886897922</updated>
       <workItem from="1709886900659" duration="23646000" />
-      <workItem from="1709965876698" duration="7103000" />
+      <workItem from="1709965876698" duration="8632000" />
+      <workItem from="1710053852063" duration="10388000" />
     </task>
     <servers />
   </component>
@@ -241,7 +260,19 @@
           <line>222</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mika/bi/mq/MultiConsumer.java</url>
+          <line>35</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

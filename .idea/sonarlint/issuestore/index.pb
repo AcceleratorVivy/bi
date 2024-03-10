@@ -77,8 +77,6 @@ l
 <src/main/java/com/mika/bi/model/enums/FileUploadBizEnum.java,e\5\e51b91e21fa8041ce8161c3eb27b92b639299a50
 a
 1src/main/java/com/mika/bi/config/AIApiConfig.java,6\b\6b7ac90e775dfe078d989c60c0694ed79b34afd7
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 _
 /src/main/java/com/mika/bi/utils/ExcelUtils.java,4\5\45a84d92b55b195eaf9731f48d8f04e4a597aaa7
 ^
@@ -91,3 +89,7 @@ d
 4src/main/java/com/mika/bi/config/RedissonConfig.java,9\3\93bb6e12935029450ed6f64aeeb386d184ae92fe
 `
 0src/test/java/com/mika/bi/RedissonRateLimit.java,0\a\0a1bd5062dc75a1a2c34be45fed065d526a3bc07
+h
+8src/main/java/com/mika/bi/controller/FileController.java,d\b\dbd078088c50b0b9ce4b7cc174b89d8937095dd2
+o
+?src/main/java/com/mika/bi/manager/RedissonRateLimitManager.java,b\c\bc8e6c8c6479d20dda889fc5b59f42a6a7b52cbd

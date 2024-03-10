@@ -75,8 +75,11 @@ knife4j:
           - com.mika.bi.controller
 ai:
   api:
-    access-key: smb3yves9nc86dgc1vkdyqltwl7x9idw
-    secret-key: ke3ozntvx93f1be2qc0p8szt9cc00dgn
+    access-key: d4cmqy1hi25ns5sh3ov1r02yur8mw3py
+    secret-key: h978bnz3kq4fl3u3he0rj1n4m2pwtz72
+
+#    access-key: smb3yves9nc86dgc1vkdyqltwl7x9idw
+#    secret-key: ke3ozntvx93f1be2qc0p8szt9cc00dgn
 redisson:
   host: 192.168.52.138
   port: 6379
